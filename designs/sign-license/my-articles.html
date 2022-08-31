@@ -11,11 +11,12 @@
     <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <!-- Custom styles for this template -->
     <link href="../../style.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic&display=swap"/><script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script></head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic&display=swap"/></head>
 
   <body>
 
-    <div data-pgc-field="editableArea"><header class="py-4" data-pgc="globalHeader">
+    <div data-pgc-field="editableArea">
+    <header class="py-4" data-pgc="globalHeader">
                 <div class="container"><div class="align-items-center row">
             <div class="col-auto">
                 <a href="#" class="fs-5 fw-normal text-decoration-none">Wiley Author Services</a>                  
@@ -60,7 +61,8 @@
                 </ul>                  
 </div>
         </div></div>
-            </header><section class="bg-light" data-pgc="navBar">
+            </header>
+    <section class="bg-light" data-pgc="navBar">
                 <div class="container">
                     <div class="d-flex">
                         <div class="btn-group btn-group-sm" role="group" aria-label="Basic example"> 
@@ -73,51 +75,86 @@
                         </div>
                     </div>
                 </div>
-            </section><main class="py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="align-items-start d-flex mb-4" data-pg-name="heading">
-                                <h3 class="fw-normal">My Articles</h3>
-                                <button type="button" class="align-items-center btn btn-link btn-sm d-inline-flex ms-auto"><span class="mdi mdi-18px mdi-file-search-outline me-2"></span>Articles missing?</button>
-                            </div>
-                            <section class="" data-pg-name="filter articles">
-                                <div class="mb-4">
-  <label for="exampleFormControlInput1" class="d-flex form-label w-100">Filter my articles<span class="ms-auto">5 articles</span></label>
-  <div class="input-group mb-3">
-  <span id="basic-addon1" class="bg-white border-end-0 input-group-text px-2"><span class="mdi mdi-magnify"></span></span>
-  <input type="search" class="border-start-0 form-control shadow-none" placeholder="Filter my articles by title, journal or DOI" aria-label="Username" aria-describedby="basic-addon1"/>
-</div>
-</div>
-                                </section><section data-pg-name="list of articles">
-                                <div data-pg-name="article">
-                                    <div class="align-items-center bg-danger d-flex p-2 text-white" data-pg-name="heading">
-                                        <span class="mdi mdi-18px mdi-alert me-2"></span>
-                                        <span class="small">Action required</span>
-                                    </div>
-                                    <div class="border border-2 border-danger p-4" data-pg-name="body"><div data-pg-name="information" class="d-flex mb-4">
-                                            <img src="https://onlinelibrary.wiley.com/cms/asset/5ad78e79-1990-4e5b-aa67-922bb5a04801/rob.v39.5.cover.jpg" width="150" class="me-3"/>
-                                            <div>
-                                                <p class="mb-2 small">Journal of Field Robotics</p>
-                                                <p class="fs-5 mb-2">Test Article 5</p>
-                                                <p class="mb-2 small"><b>DOI:</b> 10.1002/rob.22654</p>
-                                                <p class="mb-2 small"><b>Status:</b> In Production</p>
-                                            </div>
-                                        </div><div data-pg-name="actions" class="d-flex justify-content-end">                                            <a class="btn btn-danger btn-sm p-2" href="#">Manage Article</a></div></div>
-                                </div>
-                            </section> 
-                             
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="bg-light p-4">
-                                <h5>Find a home for your next article</h5>
-                                <p class="small">Wiley partners with the world&apos;s best research leaders and organizations to publish hundreds of top-tier journals.</p>
-                                <a class="align-items-center bg-white border border-primary btn btn-sm d-flex justify-content-center link-primary p-2 w-100" href="#">Find a journal</a>
-                            </div>                                                          
-                        </div>
-                    </div>
+            </section>
+    <main class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="align-items-start d-flex mb-4" data-pg-name="heading">
+              <h3 class="fw-normal">My Articles</h3>
+              <button type="button" class="align-items-center btn btn-link btn-sm d-inline-flex ms-auto"><span class="mdi mdi-18px mdi-file-search-outline me-2"></span>Articles missing?</button>
+            </div>
+            <section class="" data-pg-name="filter articles">
+              <div class="mb-4">
+                <label for="exampleFormControlInput1" class="d-flex form-label w-100">Filter my articles<span class="ms-auto">5 articles</span></label>
+                <div class="input-group mb-3">
+                  <span id="basic-addon1" class="bg-white border-end-0 input-group-text px-2"><span class="mdi mdi-magnify"></span></span>
+                  <input type="search" class="border-start-0 form-control shadow-none" placeholder="Filter my articles by title, journal or DOI" aria-label="Username" aria-describedby="basic-addon1"/>
                 </div>
-            </main></div><div data-pg-name="modals" data-pgc-field="modals"></div>
+              </div>
+            </section>
+            <section data-pg-name="list of articles">
+              <div data-pg-name="article">
+                <div class="align-items-center bg-danger d-flex p-2 text-white" data-pg-name="heading">
+                  <span class="mdi mdi-18px mdi-alert me-2"></span>
+                  <span class="small">Action required</span>
+                </div>
+                <div class="border border-2 border-danger p-4" data-pg-name="body">
+                  <div data-pg-name="information" class="d-flex mb-4">
+                    <img src="https://onlinelibrary.wiley.com/cms/asset/5ad78e79-1990-4e5b-aa67-922bb5a04801/rob.v39.5.cover.jpg" width="150" class="me-3"/>
+                    <div>
+                      <p class="demo-data mb-2 small" demo-data="journalTitle">Journal of Field Robotics</p>
+                      <p demo-data="articleTitle" class="demo-data fs-5 mb-2">Test Article 5</p>
+                      <p class="mb-2 small"><b>DOI:</b> 10.1002/rob.22654</p>
+                      <p class="mb-2 small"><b>Status:</b> In Production</p>
+                    </div>
+                  </div>
+                  <div data-pg-name="actions" class="d-flex justify-content-end"> <a class="btn btn-danger btn-sm p-2" href="manage-article.html">Manage Article</a></div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-lg-4">
+            <div class="bg-light p-4">
+              <h5>Find a home for your next article</h5>
+              <p class="small">Wiley partners with the world&apos;s best research leaders and organizations to publish hundreds of top-tier journals.</p>
+              <a class="align-items-center bg-white border border-primary btn btn-sm d-flex justify-content-center link-primary p-2 w-100" href="#">Find a journal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      // the data
+      let text =
+        '{"stuartAllen":{"email":"test@gmail.com","articleTitle":"The Best Article","journalTitle":"Journal of Cool Stuff","firstName":"Stuart","lastName":"Allen"},"mitchMurder":{"email":"mitch@gmail.com","articleTitle":"Another great article","firstName":"Mitch","lastName":"Murder"}}';
+      const obj = JSON.parse(text);
+      // get URL
+      var searchParams = new URLSearchParams(document.location.search);
+      userid = searchParams.get("userid");
+      console.log(userid);
+      // update all links with search query searchParams
+      [...document.querySelectorAll('a')].forEach(e => {
+        //add window url params to to the href's params
+        const url = new URL(e.href)
+        for (let [k, v] of new URLSearchParams(window.location.search).entries()) {
+          url.searchParams.set(k, v)
+        }
+        e.href = url.toString();
+      })
+      //get all data element placeholders
+      const dataPlaceholders = document.getElementsByClassName("demo-data");
+      console.log(dataPlaceholders.length);
+      //for each data. element placeholder
+      for (let i = 0; i < dataPlaceholders.length; i++) {
+        // get the data key
+        var dataKey = dataPlaceholders[i].getAttribute("demo-data");
+        console.log(dataKey);
+        let text = "dataPlaceholders[i].innerHTML = obj." + userid + "." + dataKey;
+        let result = eval(text);
+      };
+    </script>
+  </div><div data-pg-name="modals" data-pgc-field="modals"></div>
 
 
     <!-- Bootstrap core JavaScript
