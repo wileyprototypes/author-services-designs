@@ -8,9 +8,9 @@
     <meta name="author" content=""/>
     <title>Blank Template for Bootstrap</title>
     <!-- Bootstrap core CSS -->
-    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../../../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <!-- Custom styles for this template -->
-    <link href="../../style.css" rel="stylesheet"/>
+    <link href="../../../../style.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic&display=swap"/></head>
 
   <body>
@@ -80,7 +80,7 @@
       <div class="container overflow-hidden">
         <div class="gx-5 row">
           <div class="col-lg-auto">
-            <ul class="flex-column nav nav-pills as-active-arrow">
+            <ul class="as-active-arrow flex-column nav nav-pills">
               <li class="nav-item">
                 <a class="align-items-center d-flex justify-content-between nav-link py-3 small text-decoration-underline" href="#" data-bs-target="#modal-leavingLicenseSubmission" data-bs-toggle="modal">Funders & Grant Details<span class="mdi mdi-18px mdi-check-bold me-n4 text-success"></span></a>
               </li>
@@ -93,9 +93,7 @@
               <li class="nav-item">
                 <a class="align-items-center d-flex justify-content-between nav-link py-3 small text-decoration-underline" data-bs-target="#modal-leavingLicenseSubmission" data-bs-toggle="modal" href="#">Open Access Options<span class="mdi mdi-18px mdi-check-bold me-n4 text-success"></span></a>
               </li>
-              <li class="nav-item">
-                <a class="align-items-center d-flex justify-content-between nav-link py-3 small text-decoration-underline" data-bs-target="#modal-leavingLicenseSubmission" data-bs-toggle="modal" href="#">License Agreement Types<span class="mdi mdi-18px mdi-check-bold me-n4 text-success"></span></a>
-              </li>
+              
               <li class="active nav-item"><a class="align-items-center d-flex justify-content-between nav-link py-3 small" data-bs-target="#tab4" data-bs-toggle="tab">License Submission</a></li>
             </ul>
           </div>
@@ -107,7 +105,7 @@
                 
                 <div class="border border-2 mb-3 p-4" data-pg-name="license instructions">
                   <h5 class="d-flex mb-4"><span><span class="small text-muted">License for</span><br/><span class="ms-auto">Contributing Authors</span></span><span class="fs-6 ms-auto text-primary">Not started<span class="mdi mdi-48px mdi-alert-circle-outline ms-2"></span></span></h5><div class="mb-4">
-                                            <img src="../../assets/images/wireframes/digital-license.jpg" class="w-100"/>
+                                            <img src="../../../../assets/images/wireframes/digital-license.jpg" class="w-100"/>
                                         </div><form role="form"> 
                                             <div class="mb-3"> 
                                                 <label for="exampleInputEmail1" class="form-label">Your name</label>                                                 
@@ -128,13 +126,73 @@
             </div>
             <div class="d-flex justify-content-between">
               <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex py-2" data-bs-target="#modal-leavingLicenseSubmission" data-bs-toggle="modal"><span class="mdi mdi-arrow-left me-2"></span>Back to License
-                Agreement Types</button><button type="button" class="align-items-center btn btn-primary btn-sm d-inline-flex py-2" data-bs-target="#modal-contributingAuthorsOnlyWarning" data-bs-toggle="modal" disabled="disabled"> Confirm and proceed<span class="mdi mdi-arrow-right ms-2"></span></button>
+                Agreement Types</button><button type="button" class="align-items-center btn btn-primary btn-sm d-inline-flex py-2"> Confirm and proceed<span class="mdi mdi-arrow-right ms-2"></span></button>
             </div>
           </div>
         </div>
       </div>
     </main>
-  </div><div data-pg-name="modals" data-pgc-field="modals">
+  </div><footer class="bg-dark py-5 text-white" data-pgc-field="footer">
+            <div class="container">
+                <div class="mb-4 row">
+                    <div class="col-md-3">
+                        <h2 class="fw-normal h4 mb-4 text-info">Wiley Authors</h2>
+                        <ul class="list-unstyled small"> 
+                            <li class="mb-2"><a href="#" class="fw-normal text-decoration-none text-reset">Resources</a>
+                            </li>                             
+                            <li class="mb-2"><a href="#" class="fw-normal text-decoration-none text-reset">My Dashboard</a>
+                            </li>                             
+                            <li class="mb-2"><a href="#" class="fw-normal text-decoration-none text-reset">Find a Journal</a>
+                            </li>                             
+                        </ul>                         
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="fw-normal h4 mb-4 text-info">Help</h2>
+                        <ul class="list-unstyled small"> 
+                            <li class="mb-2">
+                                <a href="#" class="fw-normal text-decoration-none text-reset">Browse Help Resources</a>
+                            </li>                             
+                            <li class="mb-2">
+                                <a href="#" class="fw-normal text-decoration-none text-reset">Contact Author Support</a>
+                            </li>                             
+                        </ul>                         
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="fw-normal h4 mb-4 text-info">Legal</h2>
+                        <ul class="list-unstyled small"> 
+                            <li class="mb-2">
+                                <a href="#" class="fw-normal text-decoration-none text-reset">Privacy Policy</a>
+                            </li>                             
+                            <li class="mb-2">
+                                <a href="#" class="fw-normal text-decoration-none text-reset">Terms and Conditions</a>
+                            </li>                             
+                            <li class="mb-2">
+                                <a href="#" class="fw-normal text-decoration-none text-reset">Cookie Preferences</a>
+                            </li>                             
+                        </ul>                         
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="fw-normal h4 mb-4 text-info">Stay Connected</h2>
+                        <ul class="list-unstyled small"> 
+                            <li class="mb-2">
+                                <a href="#" class="align-items-baseline d-inline-flex fw-normal text-decoration-none text-reset"><span class="align-self-center mdi mdi-18px mdi-facebook me-2"></span>Wiley in Research</a>
+                            </li>                             
+                            <li class="mb-2">
+                                <a href="#" class="align-items-baseline d-inline-flex fw-normal text-decoration-none text-reset"><span class="align-self-center mdi mdi-18px mdi-twitter me-2"></span>@wileyinresearch</a>
+                            </li>                             
+                        </ul>                         
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"> 
+                        <p class="small">Copyright &copy; 2000-2022 by John Wiley &amp; Sons, Inc. All rights reserved.</p> 
+                    </div>
+                    <div class="col text-end">
+                        <img src="../../../../assets/images/logos/wiley-wordmark-white.svg" width="128px"/>                          
+                    </div>
+                </div>
+            </div>
+        </footer><div data-pg-name="modals" data-pgc-field="modals">
     <div class="modal fade pg-show-modal" id="modal-leavingLicenseSubmission" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -159,7 +217,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../assets/js/popper.min.js"></script>
-    <script src="../../bootstrap/js/bootstrap.min.js"></script>
-  <script src="../../assets/js/demo-data.js"></script></body>
+    <script src="../../../../assets/js/popper.min.js"></script>
+    <script src="../../../../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../../../assets/js/demo-data.js"></script></body>
 </html>

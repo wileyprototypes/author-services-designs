@@ -1,98 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-    <title>Blank Template for Bootstrap</title>
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/></head>
-
-  <body>
-
-    <section class="bg-dark-blue py-5 text-white">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"/>
+    </head>
+    <body>
+        <section class="bg-dark-blue py-5 text-white">
             <div class="container">
                 <h1>Wiley Author Services <span class="fw-light">Designs</span></h1>
             </div>
-        </section><section class="py-5">
+        </section>
+        <section class="py-5">
             <div class="container">
                 <h2>Prototypes</h2>
                 <section>
                     <h3>License signing</h3>
                 </section>
                 <ul> 
-                    <li><a href="designs/sign-license/prototypes/prototype-launcher.html">Laucher</a>
-                    </li>                                                                                    
+                    <li>
+                        <a href="designs/sign-license/prototypes/prototype-launcher.html">Laucher</a>
+                    </li>                     
                 </ul>
             </div>
         </section>
-        <!-- <script>
-            
-
-//
-// the data
-//
-
-let data =
-    '{"stuartAllen":{"email":"test@gmail.com","articleTitle":"The Best Article","journalTitle":"Journal of Cool Stuff","firstName":"Stuart","lastName":"Allen"},"mitchMurder":{"email":"mitch@gmail.com","articleTitle":"Another great article","firstName":"Mitch","lastName":"Murder"}}';
-const obj = JSON.parse(data);
-
-//
-// populate placeholders with demo dataKey
-//
-
-// get URL
-var searchParams = new URLSearchParams(document.location.search);
-userid = searchParams.get("userid");
-console.log("userid = " + userid);
-
-//
-// update all links with search query searchParams
-//
-
-[...document.querySelectorAll('a')].forEach(e => {
-    //add window url params to to the href's params
-    const url = new URL(e.href);
-    console.log(url);
-    for (let [k, v] of new URLSearchParams(window.location.search).entries()) {
-        url.searchParams.set(k, v)
-    }
-    e.href = url.toString();
-});
-
-//get all data element placeholders
-const dataPlaceholders = document.getElementsByClassName("demo-data");
-//for each data element placeholder
-for (let i = 0; i < dataPlaceholders.length; i++) {
-    // get the data key
-    var dataKey = dataPlaceholders[i].getAttribute("demo-data");
-    // evaluate the key's value
-    let keyValueConstruct = "obj." + userid + "." + dataKey;
-    let keyValue = eval(keyValueConstruct);
-    // if the key has a value, then update the placeholder
-    if (keyValue) {
-        // construct the function to replace the placeholder
-        let construct = "dataPlaceholders[i].innerHTML = obj." + userid + "." + dataKey;
-        // evaluate the function to replace the placeholder
-        let result = eval(construct);
-        // return the key-value pair in the console for debugging
-        console.log(dataKey + " = " + keyValue)
-    }
-};
-
-        </script> -->
-
-
-    <!-- Bootstrap core JavaScript
+        <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/demo-data.js"></script>
-  </body>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/demo-data.js"></script>
+    </body>
 </html>

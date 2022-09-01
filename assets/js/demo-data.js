@@ -1,4 +1,17 @@
+//
+// update all links with search query searchParams
+//
 
+[...document.querySelectorAll('a')].forEach(e => {
+    console.log(e.innerHTML);
+    //add window url params to to the href's params
+    const url = new URL(e.href);
+    console.log(url);
+    for (let [k, v] of new URLSearchParams(window.location.search).entries()) {
+        url.searchParams.set(k, v)
+    }
+    e.href = url.toString();
+});
 
 //
 // the data
@@ -16,20 +29,6 @@ const obj = JSON.parse(data);
 var searchParams = new URLSearchParams(document.location.search);
 userid = searchParams.get("userid");
 console.log("userid = " + userid);
-
-//
-// update all links with search query searchParams
-//
-
-[...document.querySelectorAll('a')].forEach(e => {
-    //add window url params to to the href's params
-    const url = new URL(e.href);
-    console.log(url);
-    for (let [k, v] of new URLSearchParams(window.location.search).entries()) {
-        url.searchParams.set(k, v)
-    }
-    e.href = url.toString();
-});
 
 //get all data element placeholders
 const dataPlaceholders = document.getElementsByClassName("demo-data");
