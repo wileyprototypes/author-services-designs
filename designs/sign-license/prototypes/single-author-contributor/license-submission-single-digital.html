@@ -68,13 +68,15 @@
         </div>
         <div class="mb-4" data-pg-name="header">
           <h3 class="fw-normal mb-3">Sign license</h3>
-          <div data-pg-name="information" class="d-flex mb-5">
-            <div>
-              <p class="mb-2 small">Journal of Field Robotics</p>
-              <p class="fs-5 mb-2">Test Article 5</p>
-              <p class="mb-2 small"><b>DOI:</b> 10.1002/rob.22654</p>
-            </div>
-          </div>
+          <div data-pg-name="information" class="d-flex mb-5" data-pgc="manageArticle-header">
+                                            
+                                            <div>
+                                                <p class="demo-data mb-2 small" demo-data="journalTitle">Journal of Field Robotics</p>
+                                                <p class="demo-data fs-5 mb-2" demo-data="articleTitle">Test Article 5</p>
+                                                <p class="mb-2 small"><b>DOI:</b> <span class="demo-data" demo-data="articleDOI">10.1002/rob.22654</span></p>
+                                                
+                                            </div>
+                                        </div>
         </div>
       </div>
       <div class="container overflow-hidden">
@@ -126,7 +128,7 @@
             </div>
             <div class="d-flex justify-content-between">
               <button type="button" class="align-items-center btn btn-outline-primary btn-sm d-inline-flex py-2" data-bs-target="#modal-leavingLicenseSubmission" data-bs-toggle="modal"><span class="mdi mdi-arrow-left me-2"></span>Back to License
-                Agreement Types</button><button type="button" class="align-items-center btn btn-primary btn-sm d-inline-flex py-2"> Confirm and proceed<span class="mdi mdi-arrow-right ms-2"></span></button>
+                Agreement Types</button><a class="align-items-center btn btn-primary btn-sm d-inline-flex py-2" href="successfully-submitted-license.html"> Confirm and proceed<span class="mdi mdi-arrow-right ms-2"></span></a>
             </div>
           </div>
         </div>
