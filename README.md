@@ -1,4 +1,4 @@
 # author-services-designs
-Base designs for Author Services Prototypes
+Prototype for Author Services License Signing Flow
 
 [Access the site from here: https://wileyprototypes.github.io/author-services-designs/](https://wileyprototypes.github.io/author-services-designs/)
