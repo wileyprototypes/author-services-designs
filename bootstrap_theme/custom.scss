@@ -44,7 +44,7 @@ $orange: #fd7e14;
 $yellow: #ffc107;
 $green: #07A363;
 $teal: #20c997;
-$cyan: #0dcaf0;
+$cyan: #00a6ff;
 
 // scss-docs-start theme-color-variables
 $primary: $blue;
@@ -489,6 +489,10 @@ button:not(.active) {
 .tracker {
     position: relative;
 
+    span {
+        z-index: 1;
+    }
+
     &.tracker-start::before {
         content: "";
         position: absolute;
@@ -498,7 +502,8 @@ button:not(.active) {
         border-top-width: 4px;
         border-top-style: solid;
         border-top-color: $w-dark-gray-2;
-        z-index: -1;
+
+        // z-index: -1;
         transform: translateY(-50%);
     }
 
@@ -511,7 +516,8 @@ button:not(.active) {
         border-top-width: 4px;
         border-top-style: solid;
         border-top-color: $w-dark-gray-2;
-        z-index: -1;
+
+        // z-index: -1;
         transform: translateY(-50%);
     }
 

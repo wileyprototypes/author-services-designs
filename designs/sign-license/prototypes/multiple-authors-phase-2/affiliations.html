@@ -60,67 +60,84 @@
 </div>
         </div></div>
             </header>
-        <section class="bg-light" data-pgc="navBar">
-                <div class="container">
-                    <div class="d-flex">
-                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example"> 
-                            <button type="button" class="btn btn-primary shadow-none" style="padding: 14px;">My Articles</button>                             
-
-                            <button type="button" class="btn btn-light shadow-none" style="padding: 14px;">Order History</button>                                                          
-                        </div>
-                        <div class="btn-group btn-group-sm ms-auto" role="group" aria-label="Basic example"> 
-                            <button type="button" class="btn btn-light shadow-none" style="padding: 14px;">My Author Profile</button>                                                                                       
-                        </div>
-                    </div>
-                </div>
-            </section>
         <main class="py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="align-items-start d-flex mb-4" data-pg-name="heading">
-                            <h3 class="fw-normal">My Articles</h3>
-                            <button type="button" class="align-items-center btn btn-link btn-sm d-inline-flex ms-auto"><span class="mdi mdi-18px mdi-file-search-outline me-2"></span>Articles missing?</button>
-                        </div>
-                        <section class="" data-pg-name="filter articles">
-                            <div class="mb-4">
-                                <label for="exampleFormControlInput1" class="d-flex form-label w-100">Filter my articles<span class="ms-auto">5 articles</span></label>
-                                <div class="input-group mb-3">
-                                    <span id="basic-addon1" class="bg-white border-end-0 input-group-text px-2"><span class="mdi mdi-magnify"></span></span>
-                                    <input type="search" class="border-start-0 form-control shadow-none" placeholder="Filter my articles by title, journal or DOI" aria-label="Username" aria-describedby="basic-addon1"/>
-                                </div>
-                            </div>
-                        </section>
-                        <section data-pg-name="list of articles">
-                            <div data-pg-name="article">
-                                <div class="align-items-center bg-danger d-flex p-2 text-white" data-pg-name="heading">
-                                    <span class="mdi mdi-18px mdi-alert me-2"></span>
-                                    <span class="small">Action required</span>
-                                </div>
-                                <div class="border border-2 border-danger p-4" data-pg-name="body">
-                                    <div data-pg-name="information" class="d-flex mb-4">
-                                        <img src="https://onlinelibrary.wiley.com/cms/asset/5ad78e79-1990-4e5b-aa67-922bb5a04801/rob.v39.5.cover.jpg" width="150" class="me-3"/>
-                                        <div>
-                                            <p class="demo-data mb-2 small" demo-data="journalTitle">Journal of Field Robotics</p>
-                                            <p demo-data="articleTitle" class="demo-data fs-5 mb-2">Actuator fault detection for stationary robot manipulator arm with external sensors</p>
-                                            <p class="mb-2 small"><b>DOI:</b> 10.1002/rob.22654</p>
-                                            <p class="mb-2 small"><b>Status:</b> In Production</p>
+                <div class="mb-3" data-pg-name="back">
+                    <button type="button" class="align-items-center btn btn-link btn-sm d-inline-flex ms-auto">
+                        <span class="mdi mdi-arrow-left mdi-18px me-2"></span>Back to Manage this Article </button>
+                </div>
+                <div class="mb-4" data-pg-name="header">
+                    <h3 class="fw-normal mb-3">Sign license</h3>
+                    <div data-pg-name="information" class="d-flex mb-5" data-pgc="manageArticle-header">
+                                            
+                                            <div>
+                                                <p class="demo-data mb-2 small" demo-data="journalTitle">Journal of Field Robotics</p>
+                                                <p class="demo-data fs-5 mb-2" demo-data="articleTitle">Actuator fault detection for stationary robot manipulator arm with external sensors</p>
+                                                <p class="mb-2 small"><b>DOI:</b> <span class="demo-data" demo-data="articleDOI">10.1002/rob.22654</span></p>
+                                                
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div data-pg-name="actions" class="d-flex justify-content-end"> <a class="btn btn-danger btn-sm" href="manage-article.html">Manage Article</a></div>
-                                </div>
+                </div>
+            </div>
+            <div class="container overflow-hidden position-relative">
+                <div class="gx-5 row">
+                    <div class="col-lg-auto">
+            <ul class="as-active-arrow flex-column nav nav-pills small">
+              <li class="nav-item">
+                <a class="align-items-center d-flex justify-content-between nav-link py-3 text-decoration-underline" href="funders-and-grants.html">Funders & Grant Details<span class="mdi mdi-18px mdi-check-bold me-n4 text-success"></span></a>
+              </li>
+              
+              <li class="active nav-item">
+                <a class="align-items-center d-flex justify-content-between nav-link py-3" href="#">Affiliations</a>
+              </li>
+              <li class="nav-item">
+                <a class="align-items-center d-flex disabled justify-content-between nav-link py-3" href="#">Copyright Ownership</a>
+              </li><li class="nav-item">
+                <a class="align-items-center d-flex disabled justify-content-between nav-link py-3" href="#">Open Access Options</a>
+              </li>
+              
+              <li class="nav-item"><a class="align-items-center d-flex disabled justify-content-between nav-link py-3" data-bs-target="#tab4" data-bs-toggle="tab" href="#">License Submission</a></li>
+            </ul>
+          </div>
+                    <div class="col-lg">
+                        <h4 class="fw-normal">Please specify your affiliations for this article</h4>
+                        <div class="alert alert-info small text-body"><div class="d-flex">
+                                    <span class="mdi mdi-36px mdi-information-variant me-1 text-info"></span>
+                                    <div><strong>We could not find any affiliation information.</strong>&nbsp;If you are affiliated with an institution, company, or similar, specify your affiliations here.</div>
+                                </div></div>
+                        <p class="small">Correctly declaring your affiliations helps us determine if your institution can cover your open access Article Publication Charge (<abbr title="Article Publication Charge">APC</abbr>). <b>This will not affect any information in the published article.</b></p>
+                        
+                        <ul class="small"> 
+                                <li>Do not include any of your co-authors&apos; affiliations.</li>                                 
+
+                                <li>When searching for your affiliation, select your institution only; do not include a department, office, or other subdivision (e.g., enter &quot;University of Oxford&quot; and not &quot;University of Oxford Department of Economics&quot;).</li><li>We may not have your organization or company listed in our database. This may accur with small or private organizations or companies with no prior arrangement with Wiley.</li>                                                                                                   
+                            </ul><div class="d-flex justify-content-center my-5">
+                            <button type="button" class="align-items-center btn btn-primary btn-sm d-inline-flex"><span class="mdi mdi-plus me-2"></span>Add affiliation</button>
+                        </div>
+                        <form role="form">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleInputCheck1"/>
+                                <label class="form-check-label" for="exampleInputCheck1">I am not affiliated with any institution, company, or university for this article</label>
                             </div>
-                        </section>
+                        </form>
+                        <div class="border-top d-flex justify-content-between py-4">
+                            <a class="align-items-center btn btn-outline-primary btn-sm d-inline-flex" href="funders-and-grants.html"><span class="mdi mdi-arrow-left me-2"></span>Back
+                                to Funders &amp; Grant Details</a><a class="align-items-center btn btn-primary btn-sm d-inline-flex" href="copyright-ownership-initiate.html"> Confirm and
+                                proceed<span class="mdi mdi-arrow-right ms-2"></span></a>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="bg-light p-4">
-                            <h5>Find a home for your next article</h5>
-                            <p class="small">Wiley partners with the world&apos;s best research leaders and organizations to publish hundreds of top-tier journals.</p>
-                            <a class="align-items-center bg-white border border-primary btn btn-sm d-flex justify-content-center link-primary p-2 w-100" href="#">Find a journal</a>
+                    <div class="col-lg-3">
+                        <h5>Help with affiliations</h5>
+                        <div class="list-group">
+                            <a class="align-items-center bg-w-light-gray-2 border-end-0 border-start-0 border-top-0 d-flex link-primary list-group-item px-2 small" href="#"><span class="mdi mdi-chevron-right me-1"></span>What does it mean if my institution is &quot;not verified&quot;?</a><a class="align-items-center bg-w-light-gray-2 border-end-0 border-start-0 d-flex link-primary list-group-item px-2 small" href="#"><span class="mdi mdi-chevron-right me-1"></span>What if my department is not listed?</a><a class="align-items-center bg-w-light-gray-2 border-end-0 border-start-0 d-flex link-primary list-group-item px-2 small" href="#"><span class="mdi mdi-chevron-right me-1"></span>What if my organization is not listed?</a><a class="align-items-center bg-w-light-gray-2 border-end-0 border-start-0 d-flex link-primary list-group-item px-2 small" href="#"><span class="mdi mdi-chevron-right me-1"></span>Should I list the affiliations of my co-authors?</a><a class="align-items-center bg-w-light-gray-2 border-end-0 border-start-0 d-flex link-primary list-group-item px-2 small" href="#"><span class="mdi mdi-chevron-right me-1"></span>What if I changed or moved organizations?</a><a class="align-items-center bg-w-light-gray-2 border-bottom-0 border-end-0 border-start-0 d-flex link-primary list-group-item px-2 small" href="#"><span class="mdi mdi-chevron-right me-1"></span>What if my institution is listed, but its name or locations is incorrect?</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            <div class="position-absolute" style="right: 0; bottom: 0;">
+                    <button class="align-items-center btn btn-sm btn-success d-inline-flex m-4 rounded-pill" type="button">
+                        <span class="mdi mdi-help-circle-outline me-1"></span>Help
+                    </button>
+                </div></div>
         </main>
     </div><footer class="bg-dark py-5 text-white" data-pgc-field="footer">
             <div class="container">

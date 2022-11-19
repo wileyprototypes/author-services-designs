@@ -15,8 +15,7 @@
 
   <body>
 
-    <div data-pgc-field="editableArea">
-        <header class="py-4" data-pgc="globalHeader">
+    <div data-pgc-field="editableArea"><header class="py-4" data-pgc="globalHeader">
                 <div class="container"><div class="align-items-center row">
             <div class="col-auto">
                 <a href="#" class="fs-5 fw-normal text-decoration-none">Wiley Author Services</a>                  
@@ -59,70 +58,64 @@
                 </ul>                  
 </div>
         </div></div>
-            </header>
-        <section class="bg-light" data-pgc="navBar">
+            </header><main class="py-5">
                 <div class="container">
-                    <div class="d-flex">
-                        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example"> 
-                            <button type="button" class="btn btn-primary shadow-none" style="padding: 14px;">My Articles</button>                             
-
-                            <button type="button" class="btn btn-light shadow-none" style="padding: 14px;">Order History</button>                                                          
-                        </div>
-                        <div class="btn-group btn-group-sm ms-auto" role="group" aria-label="Basic example"> 
-                            <button type="button" class="btn btn-light shadow-none" style="padding: 14px;">My Author Profile</button>                                                                                       
-                        </div>
-                    </div>
-                </div>
-            </section>
-        <main class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="align-items-start d-flex mb-4" data-pg-name="heading">
-                            <h3 class="fw-normal">My Articles</h3>
-                            <button type="button" class="align-items-center btn btn-link btn-sm d-inline-flex ms-auto"><span class="mdi mdi-18px mdi-file-search-outline me-2"></span>Articles missing?</button>
-                        </div>
-                        <section class="" data-pg-name="filter articles">
-                            <div class="mb-4">
-                                <label for="exampleFormControlInput1" class="d-flex form-label w-100">Filter my articles<span class="ms-auto">5 articles</span></label>
-                                <div class="input-group mb-3">
-                                    <span id="basic-addon1" class="bg-white border-end-0 input-group-text px-2"><span class="mdi mdi-magnify"></span></span>
-                                    <input type="search" class="border-start-0 form-control shadow-none" placeholder="Filter my articles by title, journal or DOI" aria-label="Username" aria-describedby="basic-addon1"/>
-                                </div>
-                            </div>
-                        </section>
-                        <section data-pg-name="list of articles">
-                            <div data-pg-name="article">
-                                <div class="align-items-center bg-danger d-flex p-2 text-white" data-pg-name="heading">
-                                    <span class="mdi mdi-18px mdi-alert me-2"></span>
-                                    <span class="small">Action required</span>
-                                </div>
-                                <div class="border border-2 border-danger p-4" data-pg-name="body">
-                                    <div data-pg-name="information" class="d-flex mb-4">
-                                        <img src="https://onlinelibrary.wiley.com/cms/asset/5ad78e79-1990-4e5b-aa67-922bb5a04801/rob.v39.5.cover.jpg" width="150" class="me-3"/>
-                                        <div>
-                                            <p class="demo-data mb-2 small" demo-data="journalTitle">Journal of Field Robotics</p>
-                                            <p demo-data="articleTitle" class="demo-data fs-5 mb-2">Actuator fault detection for stationary robot manipulator arm with external sensors</p>
-                                            <p class="mb-2 small"><b>DOI:</b> 10.1002/rob.22654</p>
-                                            <p class="mb-2 small"><b>Status:</b> In Production</p>
+                    <div class="mb-3" data-pg-name="back">
+                                <a class="align-items-center btn btn-link btn-sm d-inline-flex ms-auto" href="manage-article.html">
+                                    <span class="mdi mdi-arrow-left mdi-18px me-2"></span>Back to Manage this Article
+                                </a>
+                            </div><div class="mb-4" data-pg-name="header">
+                                <h3 class="fw-normal mb-3">Sign license</h3><div data-pg-name="information" class="d-flex mb-5" data-pgc="manageArticle-header">
+                                            
+                                            <div>
+                                                <p class="demo-data mb-2 small" demo-data="journalTitle">Journal of Field Robotics</p>
+                                                <p class="demo-data fs-5 mb-2" demo-data="articleTitle">Actuator fault detection for stationary robot manipulator arm with external sensors</p>
+                                                <p class="mb-2 small"><b>DOI:</b> <span class="demo-data" demo-data="articleDOI">10.1002/rob.22654</span></p>
+                                                
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div data-pg-name="actions" class="d-flex justify-content-end"> <a class="btn btn-danger btn-sm" href="manage-article.html">Manage Article</a></div>
-                                </div>
+                                
                             </div>
-                        </section>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="bg-light p-4">
-                            <h5>Find a home for your next article</h5>
-                            <p class="small">Wiley partners with the world&apos;s best research leaders and organizations to publish hundreds of top-tier journals.</p>
-                            <a class="align-items-center bg-white border border-primary btn btn-sm d-flex justify-content-center link-primary p-2 w-100" href="#">Find a journal</a>
+                </div><div class="container overflow-hidden">
+                    <div class="gx-5 row">
+                        <div class="col-lg-auto">
+                            <ul class="as-active-arrow flex-column nav nav-pills small">
+  <li class="nav-item">
+    <a class="active nav-link py-3 text-primary" aria-current="page" href="#" data-bs-target="#tab1" data-bs-toggle="tab">Funders & Grant Details</a>
+  </li>
+  
+  
+  <li class="nav-item">
+    <a class="disabled nav-link py-3" data-bs-target="#tab4" data-bs-toggle="tab" href="#">Affiliations</a>
+  </li><li class="nav-item">
+    <a class="disabled nav-link py-3" data-bs-target="#tab4" data-bs-toggle="tab" href="#">Copyright Ownership</a>
+  </li><li class="nav-item">
+    <a class="disabled nav-link py-3" data-bs-target="#tab4" data-bs-toggle="tab" href="#">Open Access Options</a>
+  </li><li class="nav-item"><a class="disabled nav-link py-3" data-bs-target="#tab4" data-bs-toggle="tab" href="#">License Submission</a></li>
+</ul>
                         </div>
+                        <div class="col-lg">
+                                                                                      
+                        <h4 class="fw-normal">Please specify funders for this article</h4><div class="alert alert-info small text-body"><div class="d-flex">
+                                    <span class="mdi mdi-36px mdi-information-variant me-1 text-info"></span>
+                                    <div><strong>We could not find any funder information.</strong>&nbsp;If you or any of your co-authors received funding for this article, specify your funders here.
+                                    </div>
+                                </div></div><p class="small">Correctly declaring the article&apos;s funders helps us ensure that you&apos;re <b>compliant with any funder mandates</b> and determines if you&apos;re <b>eligible for open access funding</b>.</p><p class="small">This journal offers a number of <a href="#">license options</a>. By signing, you confirm that you are able to grant the necessary permissions for this article and its supplementary materials. These permissions include your funder policy restrictions. You are expected to meet your funder&apos;s policies, for example if the funder is a member of <a href="#">Coalition S</a>.</p><div class="d-flex justify-content-center my-5">
+                                <button type="button" class="align-items-center btn btn-primary btn-sm d-inline-flex">
+                                    <span class="mdi mdi-plus me-2"></span>Add funder
+                                </button>
+                            </div><form role="form">                                                                                                    
+
+                                <div class="mb-3 form-check"> 
+                                    <input type="checkbox" class="form-check-input" id="exampleInputCheck1"/> 
+                                    <label class="form-check-label" for="exampleInputCheck1">I did not receive funding for this article</label>                                     
+                                </div>                                                                  
+                            </form><div class="border-top d-flex justify-content-between py-4">
+              <a class="align-items-center btn btn-outline-primary btn-sm d-inline-flex" href="manage-article.html"><span class="mdi mdi-arrow-left me-2"></span>Back to Manage this Article</a><a class="align-items-center btn btn-primary btn-sm d-inline-flex" href="affiliations.html"> Confirm and proceed<span class="mdi mdi-arrow-right ms-2"></span></a>
+            </div></div>
                     </div>
                 </div>
-            </div>
-        </main>
-    </div><footer class="bg-dark py-5 text-white" data-pgc-field="footer">
+            </main></div><footer class="bg-dark py-5 text-white" data-pgc-field="footer">
             <div class="container">
                 <div class="mb-4 row">
                     <div class="col-md-3">
