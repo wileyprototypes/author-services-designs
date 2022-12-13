@@ -529,3 +529,11 @@ button:not(.active) {
         border-top-color: $success;
     }
 }
+
+// stop collapse from animating
+#collapses-obtainStyle,
+#collapses-downloadStyle {
+    .collapsing {
+        transition-duration: 0s !important;
+    }
+}
