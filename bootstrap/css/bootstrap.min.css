@@ -19338,7 +19338,8 @@ button:not(.active) .when-not-active-hide {
   border-top-color: #07A363;
 }
 #collapses-obtainStyle .collapsing,
-#collapses-downloadStyle .collapsing {
+#collapses-downloadStyle .collapsing,
+#collapses-downloadStyleNASA .collapsing {
   -webkit-transition-duration: 0s !important;
        -o-transition-duration: 0s !important;
           transition-duration: 0s !important;

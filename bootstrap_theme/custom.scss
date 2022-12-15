@@ -532,7 +532,8 @@ button:not(.active) {
 
 // stop collapse from animating
 #collapses-obtainStyle,
-#collapses-downloadStyle {
+#collapses-downloadStyle,
+#collapses-downloadStyleNASA {
     .collapsing {
         transition-duration: 0s !important;
     }
