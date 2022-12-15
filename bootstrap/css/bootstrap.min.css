@@ -19337,7 +19337,8 @@ button:not(.active) .when-not-active-hide {
 .tracker.tracker-start-complete::before {
   border-top-color: #07A363;
 }
-#collapses-obtainStyle .collapsing, #collapses-downloadStyle .collapsing {
+#collapses-obtainStyle .collapsing,
+#collapses-downloadStyle .collapsing {
   -webkit-transition-duration: 0s !important;
        -o-transition-duration: 0s !important;
           transition-duration: 0s !important;
