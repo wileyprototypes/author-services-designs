@@ -117,6 +117,7 @@ $font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe 
 
 // $font-size-base affects the font size of the body text
 $font-weight-bold: 600;
+$small-font-size: .875em !important;
 
 // scss-docs-start headings-variables
 $headings-font-weight: $font-weight-bold;
@@ -279,7 +280,7 @@ a {
 }
 
 b,
-strong {
+strong {
     font-weight: $font-weight-bold;
 }
 
@@ -374,11 +375,18 @@ strong {
 }
 
 // animated and dynamic collapse
-a[aria-expanded=true],
-button[aria-expanded=true] {
+a[data-bs-toggle="collapse"],
+button[data-bs-toggle="collapse"] {
     .collapse-chevron {
-        transition-duration: .25s;
+        transition-duration: 0.25s;
         transition-property: transform;
+    }
+}
+
+a[aria-expanded=true],
+button[aria-expanded=true] {
+    .collapse-chevron {
+        transform: rotate(0deg);
     }
 
     .show-when-expanded-false {
@@ -387,7 +395,7 @@ button[aria-expanded=true] {
 }
 
 a[aria-expanded=false],
-button[aria-expanded=false] {
+button[aria-expanded=false] {
     .collapse-chevron {
         transform: rotate(180deg);
     }
@@ -399,14 +407,14 @@ button[aria-expanded=false] {
 
 // animated and dynamic toggle button
 a[aria-pressed=true],
-button[aria-pressed=true] {
+button[aria-pressed=true] {
     .show-when-pressed-false {
         display: none;
     }
 }
 
 a[aria-pressed=false],
-button[aria-pressed=false] {
+button[aria-pressed=false] {
     .show-when-pressed-true {
         display: none;
     }
@@ -414,14 +422,14 @@ button[aria-pressed=false] {
 
 // show/hide when a parent class is not active
 a.active,
-button.active {
+button.active {
     .when-active-hide {
         display: none;
     }
 }
 
 a:not(.active),
-button:not(.active) {
+button:not(.active) {
     .when-not-active-hide {
         display: none;
     }
@@ -532,8 +540,8 @@ button:not(.active) {
 
 // stop collapse from animating
 #collapses-obtainStyle,
-#collapses-downloadStyle,
-#collapses-downloadStyleNASA {
+#collapses-downloadStyle,
+#collapses-downloadStyleNASA {
     .collapsing {
         transition-duration: 0s !important;
     }
